@@ -26,17 +26,16 @@ $about_info = mysqli_fetch_assoc($about);
           <div class="col-md-3">
             <h4>Services</h4>
             <ul>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Cleaning</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Electrical</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Plumbing</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Appliances</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Carpentry</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Cleaning</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Electrical</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Plumbing</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Appliances</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Carpentry</a></li>
+              <li><a href="services.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Panting</a></li>
             </ul>
             <ul>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Geyser Service</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Vehicle Care</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Pest Control</a></li>
-              <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Panting</a></li>
+              
+              
             </ul>
           </div>
           <div class="col-md-2">

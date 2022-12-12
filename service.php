@@ -19,11 +19,17 @@ $service = mysqli_query($conn, "SELECT * FROM `services` where status ='1'");
       <?php 
       while($services = mysqli_fetch_assoc($service)){
       ?>  
-      <div class="col-md-4 col-sm-6 col-xs-12 srevice_img"> 
+      <div class="col-md-3 col-sm-6 col-xs-12 srevice_img"> 
         <a href="service_detail.php?id= <?= $services['id']?>">
-          <img <?php echo ' src="data:image/jpeg;base64,' . base64_encode($services['image']) . '"' ?> class="img-circle htw" alt="cleaning" /></a>
+          <img <?php echo ' src="data:image/jpeg;base64,' . base64_encode($services['image']) . '"' ?> class=" htw" alt="cleaning" />
+        <!-- </a> -->
           <h4><?php echo $services['name']; ?></h4>
-          <p><a href="service_detail.php?id=<?php echo $services['id']; ?>"><b>View Details</b></a></p>
+          <p>
+            <!-- <a href="service_detail.php?id=<?php echo $services['id']; ?>"> -->
+            <p class="view-detail">View Details</p>
+          </a>
+        </p>
+
           <!-- <p><?php echo strtok($services['description'] , '.'); ?>.</p> -->
         </div>
         <?php } ?>       
