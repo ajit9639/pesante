@@ -13,5 +13,6 @@ jobs:
       with:
         server: pesante.co.in
         username:  pesante@pesante.co.in
-        password: ${{ secrets.ftp_password }}
+        # password: ${{ secrets.ftp_password }}
+        password: Pesante@123#1
         
