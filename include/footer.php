@@ -12,7 +12,7 @@ $about_info = mysqli_fetch_assoc($about);
     <div class="container-fluid footerbg">
       <div class="container">
         <div class="row">
-          <div class="col-md-3"> <a href="#" class="footer-logo"> 
+          <div class="col-md-3"> <a href="index.php" class="footer-logo"> 
           <img class="logo-dark" src="images/Pesante.png" alt="">
           <!-- <img class="logo-dark" src="images/logo2.png" alt="Hire A Helper" />  -->
         </a>

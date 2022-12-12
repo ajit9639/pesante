@@ -2,7 +2,7 @@
 
 $site = mysqli_query($conn, "SELECT * FROM `site_infos` WHERE 1");
 $s_info = mysqli_fetch_assoc($site);
-
+$msg = "";
 if(isset($_POST['submit']))
 {
   $name =$_POST['name'];
@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
   $query = mysqli_query($conn, "INSERT INTO `contactuses`(`name`, `email`, `phone`, `subject`, `massage`, `status`) VALUES ('$name','$email','$phone','$subject','$message','1')");
   if($query)
-    echo "<p class='success'>Message sent successfully</p>";
+   $msg = "Message sent successfully";
   else
     echo "<p class='col'>Something happen wrong</p>";
 }
@@ -43,6 +43,16 @@ if(isset($_POST['submit']))
               <div></div>
               <div class="row">
                 <form method="POST">
+
+
+                <?php
+                    if($msg){ ?>
+                      <div class="alert alert-danger">
+                      <strong>Success!</strong> <?= $msg ?>
+                    </div>
+                    <?php } ?>
+
+
                   <h2>Contact Form</h2>
                   <div class="form-group col-md-6 col-sm-6 col-xs-12">
                     <input class="form-control" id="name" name="name" placeholder="Full Name" type="text"/>
@@ -81,7 +91,7 @@ if(isset($_POST['submit']))
     </div>
 
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14710.146831307371!2d86.162298963655!3d22.819624638021125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e386a2c55e59%3A0xb3c0d937b8ae1b11!2sSai%20Temple!5e0!3m2!1sen!2sin!4v1670830411777!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14710.146831307371!2d86.162298963655!3d22.819624638021125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e386a2c55e59%3A0xb3c0d937b8ae1b11!2sSai%20Temple!5e0!3m2!1sen!2sin!4v1670830411777!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
 
   </section>
   <!--Contact Form End--> 
