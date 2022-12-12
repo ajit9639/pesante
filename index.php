@@ -12,7 +12,7 @@ include "include/header.php";
           <h1 class="panel-heading">Ready to Live Smarter?</h1>
           <p class="caption">Book Expert home cleaners and handymen at a moment's notice. just pick a<br/>
             time and we'll do the rest</p>
-          <form class="form-inline book-now-home">
+          <!-- <form class="form-inline book-now-home">
             <div class="form-group">
               <div class="input-group">
                 <div class="dropdown category-dropdown text-left"> <a data-toggle="dropdown" href="#"><i class="fa fa-list" aria-hidden="true"></i> <span class="change-text">Select Service</span> <i class="fa fa-caret-down pull-right" aria-hidden="true"></i> </a>
@@ -32,7 +32,7 @@ include "include/header.php";
               </div>
             </div>
             <button type="submit" class="btn btn-primary booknow btn-skin">Book now</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
@@ -79,26 +79,21 @@ include "include/header.php";
       <div class="col-md-12">
         <h1 class="panel-heading">Our services</h1>
         <ul class="services-list">
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/cleaning.png" alt="Cleaning" /><br />
-            Cleaning</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/electrical.png" alt="Electrical" /><br />
-            Electrical</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/plumbing.png" alt="Plumbing" /><br />
-            Plumbing</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/appliances.png" alt="Appliances" /><br />
-            Appliances</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/carpentry.png" alt="Carpentry" /><br />
-            Carpentry</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/geyser.png" alt="Geyser Service" /><br />
-            Geyser Service</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/vehicle.png" alt="Vehicle Care" /><br />
-            Vehicle Care</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/pest.png" alt="Pest Control" /><br />
-            Pest Control</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/painting.png" alt="Painting" /><br />
-            Painting</a></li>
-          <li><a href="service_detail.php"><img src="images/02home/services-icons/more.png" alt="View More" /><br />
-            View More</a></li>
+<?php
+$query = "SELECT * FROM `services`";
+$data = mysqli_query($conn , $query);
+
+while($row = mysqli_fetch_assoc($data)){
+?>
+          <li>
+            <a href="service_detail.php?id=<?= $row['id']?>">
+              <img <?php echo ' src="data:image/jpeg;base64,' . base64_encode($row['image']) . '"' ?> alt="<?= $row['name']?>" style="width:100%"/>
+              <br />
+              <?= $row['name']?>
+          </a>
+        </li>
+<?php } ?>
+          
         </ul>
       </div>
     </div>

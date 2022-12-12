@@ -12,15 +12,12 @@ $facts = mysqli_fetch_assoc($fact);
 <div id="wrapper"> 
   
 <!--page_title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">About Us</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">About Us</li>
-      </ol>
-    </div>
-  </div>
+<img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / about</p>
+</div>
+
+
   <!--page_title Section End--> 
   
   <!--page content Section Satrt-->

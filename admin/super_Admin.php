@@ -62,7 +62,7 @@ if (isset($_POST['done'])) {
 
 <body style="background:url('./dist/img/bg1.jpeg')" class="bg">
     <div class="row">
-        <div class="col-md-6 mx-auto p-0 ">
+        <div class="col-md-4 mx-auto p-0 ">
 
             <div class="card" style="background-color: #fff0;">
                 <div class="text-center mt-3">
@@ -85,8 +85,8 @@ if (isset($_POST['done'])) {
     font-family: serif;
     border-radius:45px;
     ">
-    <img src="./dist/img/Pesante.png" style="width:100%;height:150px"/>
-    Pesante<br>Admin Login</span>
+    <img src="./dist/img/Pesante.png" style="width:100%;height:100px"/>
+    </span>
                         
                         
                         <div class="login-space">

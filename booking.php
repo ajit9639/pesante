@@ -3,7 +3,7 @@ $id = $_GET['id'];
 $service = mysqli_query($conn, "SELECT * FROM `services` where id ='$id'");
 $services = mysqli_fetch_assoc($service);
 $book_id = $services['id'];
-
+$msg = "";
 if(isset($_POST['submit']))
 {
   $fname =$_POST['fname'];
@@ -20,25 +20,21 @@ if(isset($_POST['submit']))
   $query = mysqli_query($conn, "INSERT INTO `booking`(`booked_service`, `fname`, `lname`, `email`, `phone`, `address`, `city`, `pincode`, `date`, `time`, `description`, `status`) 
                         VALUES ('$book_id','$fname','$lname','$email','$phone','$address','$city','$pincode','$date','$time','$description','1')");
   if($query)
-    echo "<p class='success'>Your details are sent successfully</p>";
+    $msg =  "Your details are sent successfully";
   else
     echo "<p class='col'>Something happen wrong</p>";
 }
 
 ?>
 
-<div id="wrapper" class="inner_page booking_page"><!--Wrapper Start--> 
+<div id="wrapper" class="inner_page booking_page">
+  <!--Wrapper Start--> 
   
 <!--Page Title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">book now</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">Book Now</li>
-      </ol>
-    </div>
-  </div>
+<img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / booking</p>
+</div>
   <!--Page Title Section End--> 
   
   <!--Contact Information Start-->
@@ -56,6 +52,12 @@ if(isset($_POST['submit']))
               <div class="container-fluid">
                 <div class="row">
                   <form method="post">
+                    <?php
+                    if($msg){ ?>
+                      <div class="alert alert-danger">
+                      <strong>Success!</strong> <?= $msg ?>
+                    </div>
+                    <?php } ?>
                     <h2>Contact Information</h2>
                     <p>This information will be used to contact you about your service</p>
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">

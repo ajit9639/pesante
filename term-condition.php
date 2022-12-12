@@ -3,15 +3,10 @@
   <!--Wrapper Start--> 
   
   <!--Page Title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">term and condition</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">term and condition</li>
-      </ol>
-    </div>
-  </div>
+  <img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / terms</p>
+</div>
   <!--Page Title Section End--> 
   
   <!--Blog Page Start-->

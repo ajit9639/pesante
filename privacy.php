@@ -3,15 +3,10 @@
   <!--Wrapper Start--> 
   
   <!--Page Title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">privacy policy</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">privacy policy</li>
-      </ol>
-    </div>
-  </div>
+  <img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / privacy</p>
+</div>
   <!--Page Title Section End--> 
   
   <!--Blog Page Start-->

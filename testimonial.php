@@ -4,15 +4,10 @@
   <!--Wrapper Start--> 
 
   <!--Page Title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">Testimonials</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">Testimonials</li>
-      </ol>
-    </div>
-  </div>
+  <img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / testimonial</p>
+</div>
   <!--Page Title Section End--> 
   
   <!--Blog Page Start-->
@@ -39,7 +34,7 @@
               ?>
               <div class="media">
                 
-                <a class="pull-left" href="#"> <img class="media-object" src="images/blank.png" alt="blank" /> </a>
+                <a class="pull-left" href="#"> <img class="media-object" src="images/02home/clinte2.png" alt="blank" /> </a>
                 <div class="media-body">
                   <h4 class="media-heading"><?php echo $test['name']; ?></h4>
                   <?php echo $test['massage']; ?>

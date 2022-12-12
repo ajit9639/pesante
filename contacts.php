@@ -23,15 +23,10 @@ if(isset($_POST['submit']))
 <!--Wrapper Start-->
 <div id="wrapper"> 
 <!--Page Title Section Satrt-->
-  <div id="page_title">
-    <div class="container text-center">
-      <div class="panel-heading">contact us</div>
-      <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li class="active">Contact us</li>
-      </ol>
-    </div>
-  </div>
+<img src="https://goodwillevents.com/images/planner1.jpg" style="width:100%">
+<div class="sub-title">
+    <p>home / contact</p>
+</div>
   <!--Page Title Section End--> 
   
   <!--Contacts Section Satrt--> 
@@ -85,9 +80,9 @@ if(isset($_POST['submit']))
       </div>
     </div>
 
-    <div class="contacts_mape">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14710.605909905118!2d86.1713945313202!3d22.81537460819902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e39d74bfb285%3A0x7b361d6e26a570ea!2sCircuit%20House%20Area%2C%20Bistupur%2C%20Jamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1670345838324!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14710.146831307371!2d86.162298963655!3d22.819624638021125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e386a2c55e59%3A0xb3c0d937b8ae1b11!2sSai%20Temple!5e0!3m2!1sen!2sin!4v1670830411777!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   </section>
   <!--Contact Form End--> 
   
