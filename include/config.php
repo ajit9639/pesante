@@ -5,6 +5,6 @@ if($_SERVER['HTTP_HOST']=='localhost')
 }
 else
 {
-    $conn = mysqli_connect();
+    $conn = mysqli_connect('localhost','pesanlqp_db','207.174.213.150','pesanlqp_db');
 }
 ?>
