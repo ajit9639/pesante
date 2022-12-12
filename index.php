@@ -1,11 +1,9 @@
 <?php 
 include "include/header.php"; 
-
     $fact = mysqli_query($conn, "SELECT * FROM `facts`");
     $facts = mysqli_fetch_assoc($fact);
                 
 ?>
-
 <!--Banner Start-->
 <section id="banner" class="home-one">
     <div class="container text-center parallax-section">
